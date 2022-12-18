@@ -1,0 +1,57 @@
+@use '../variables';
+@use '../mixins';
+
+#sidebar {
+  background-color: variables.$bg-color;
+  width: 16%;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1.5rem;
+  border-right: variables.$border-color;
+
+  a {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    color: variables.$text-color;
+  }
+
+  img {
+    width: 55%;
+  }
+
+  .list__icons {
+    padding: 1.5rem 0;
+
+    &__item {
+      padding: 1.3rem 0;
+    }
+
+    svg {
+      font-size: 22px;
+    }
+  }
+
+  .profile {
+    margin-top: 1rem;
+
+    img {
+      width: 1.5rem;
+      height: 1.5rem;
+      border-radius: variables.$border-radius;
+    }
+  }
+}
+
+.btn-more {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2rem 1.3rem;
+
+  svg {
+    font-size: 22px;
+  }
+}
