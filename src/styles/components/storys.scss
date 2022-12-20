@@ -1,0 +1,33 @@
+@use '../variables.scss';
+@use '../mixins.scss';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#storys {
+  display: flex;
+  background-color: variables.$bg-color;
+  border: variables.$border-color;
+  padding: 1rem;
+  gap: 1rem;
+  width: 455px;
+  overflow-x: auto;
+  
+  .picture {
+    text-align: center;
+  
+    img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: variables.$border-radius;
+      border: 2px solid #ff0000;
+      padding: 2px;
+    }
+  
+    figcaption {
+      font-size: .75rem;
+      color: #262626;
+    }
+  }
+}
