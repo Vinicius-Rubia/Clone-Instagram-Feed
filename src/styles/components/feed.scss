@@ -1,0 +1,95 @@
+@use '../variables';
+@use '../mixins';
+
+.card__feed {
+  width: 470px;
+  border: variables.$border-color;
+  border-radius: .4rem;
+  margin: 1rem 0;
+
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: .5rem .7rem;
+
+    :first-child {
+      display: flex;
+      align-items: center;
+      gap: .7rem;
+
+      img {
+        width: 2rem;
+        height: 2rem;
+        border-radius: variables.$border-radius;
+        border: 2px solid #ff0000;
+        padding: 2px;
+      }
+
+      span {
+        font-size: .8rem;
+      }
+    }
+  }
+
+  .card__content {
+    .img-post {
+      width: 100%;
+      height: 320px;
+    }
+
+    &__actions {
+      display: flex;
+      justify-content: space-between;
+      padding: .5rem .7rem;
+
+      :first-child {
+        display: flex;
+        gap: 1rem;
+      }
+    }
+  }
+}
+
+.card__feed {
+
+  .likes,
+  .description {
+    font-size: .8em;
+    padding: .5rem .7rem;
+    color: #454545;
+
+    .bold {
+      color: #585858;
+      font-weight: 600;
+    }
+  }
+
+  .comments {
+    padding: .5rem .7rem;
+    display: flex;
+    gap: 10px;
+    border-top: 1px solid #ededed;
+    
+    div {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+    }
+    
+    input, button {
+      border: none;
+      outline: none;
+      background-color: transparent;
+    }
+
+    input {
+      width: 80%;
+    }
+
+    button {
+      color: #0099ff;
+      cursor: pointer;
+    }
+  }
+}

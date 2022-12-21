@@ -8,10 +8,11 @@
 #storys {
   display: flex;
   background-color: variables.$bg-color;
+  border-radius: .4rem;
   border: variables.$border-color;
   padding: 1rem;
-  gap: 1rem;
-  width: 455px;
+  gap: 1.1rem;
+  width: 470px;
   overflow-x: auto;
   
   .picture {

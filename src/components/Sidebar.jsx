@@ -1,19 +1,23 @@
-import { GrHomeRounded, GrSearch, GrMenu } from "react-icons/gr";
-import { MdOutlineExplore } from "react-icons/md";
-import { RiMessengerLine } from "react-icons/ri";
-import { AiOutlineHeart } from "react-icons/ai";
-import { BsPlusSquare } from "react-icons/bs";
-import logoInstagram from "../img/logo_instagram.png";
-import profile from "../img/profile.jpeg";
+import person_1 from "../img/profile_1.svg";
+
+import logoInstagram from "../img/logo_instagram.svg";
+import iconHome from "../img/icon_home.svg";
+import iconSearch from "../img/icon_search.svg";
+import iconExplorer from "../img/icon_explorer.svg";
+import iconMessenger from "../img/icon_messenger.svg";
+import iconHeart from "../img/icon_heart.svg";
+import iconPlus from "../img/icon_plus.svg";
+import iconMenu from "../img/icon_menu_hamburger.svg";
+
 import "../styles/components/sidebar.scss";
 
 const icons = [
-  { id: 1, text: "Página Inicial", icon: <GrHomeRounded /> },
-  { id: 2, text: "Pesquisa", icon: <GrSearch /> },
-  { id: 3, text: "Explorar", icon: <MdOutlineExplore /> },
-  { id: 4, text: "Mensagens", icon: <RiMessengerLine /> },
-  { id: 5, text: "Notificações", icon: <AiOutlineHeart /> },
-  { id: 6, text: "Criar", icon: <BsPlusSquare /> },
+  { id: 1, text: "Página Inicial", icon: iconHome },
+  { id: 2, text: "Pesquisa", icon: iconSearch },
+  { id: 3, text: "Explorar", icon: iconExplorer },
+  { id: 4, text: "Mensagens", icon: iconMessenger },
+  { id: 5, text: "Notificações", icon: iconHeart },
+  { id: 6, text: "Criar", icon: iconPlus },
 ];
 
 const Sidebar = () => {
@@ -24,18 +28,20 @@ const Sidebar = () => {
         {icons.map((icon) => (
           <li className="list__icons__item" key={icon.id}>
             <a href="#">
-              {icon.icon} {icon.text}
+              <img src={icon.icon} alt={icon.text} /> {icon.text}
             </a>
           </li>
         ))}
         <li className="profile">
           <a href="#">
-            <img src={profile} alt="Profile" /> Perfil
+            <img src={person_1} alt="Profile" /> Perfil
           </a>
         </li>
       </ul>
       <div className="btn-more">
-        <a href="#">{<GrMenu />} Mais</a>
+        <a href="#">
+          <img src={iconMenu} alt="Icon Menu" /> Mais
+        </a>
       </div>
     </aside>
   );
