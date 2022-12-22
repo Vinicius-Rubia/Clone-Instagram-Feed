@@ -4,26 +4,86 @@
 
 .aside {
   position: relative;
-  left: 5%;
+  top: 1.5rem;
+  left: 1.5rem;
+  width: 300px;
+
+  .title {
+    font-size: 14px;
+    color: #777777;
+    font-weight: bold;
+  }
+
+  a.title {
+    color: variables.$text-color;
+    font-size: 13px;
+  }
+
+  .description,
+  .btn-link {
+    font-size: 12px;
+  }
+
+  .description {
+    color: variables.$text-color-secondary;
+  }
+
+  .btn-link {
+    color: #139EF2;
+    font-weight: bold;
+  }
+
+  .content {
+    display: flex;
+    align-items: center;
+    gap: .7rem;
+  }
 
   img {
     border-radius: variables.$border-radius;
   }
 
-  .account-user {
+  .account-user,
+  .suggestion {
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
 
-    figure {
-      display: flex;
-      align-items: center;
-      gap: 1.3rem;
-    }
-    
+  .account-user {
     img {
-      width: 4rem;
-      height: 4rem;
+      width: 3.5rem;
+      height: 3.5rem;
+    }
+  }
+
+  .suggestion {
+    margin: 1rem 0;
+
+    img {
+      width: 2rem;
+      height: 2rem;
+    }
+  }
+
+  .about .list-links {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: .8rem;
+    color: #C7C7C7;
+
+    a {
+      color: #C7C7C7;
+
+      &::after {
+        content: '\00B7';
+        margin: 0 .2rem 0 .2rem;
+        line-height: 1.3rem;
+      }
+    }
+
+    .copyright {
+      margin-top: 1rem;
     }
   }
 }
