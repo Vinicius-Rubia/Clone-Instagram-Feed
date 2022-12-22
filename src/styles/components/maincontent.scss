@@ -1,6 +1,6 @@
 #main__content {
+  position: relative;
+  transform: translateX(50px);
   display: flex;
-  justify-content: center;
-  width: 84%;
-  margin: 1.5rem 245px 2rem;
+  margin: 1.5rem auto;
 }

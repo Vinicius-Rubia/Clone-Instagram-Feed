@@ -1,0 +1,29 @@
+@use '../variables';
+@use '../mixins';
+
+
+.aside {
+  position: relative;
+  left: 5%;
+
+  img {
+    border-radius: variables.$border-radius;
+  }
+
+  .account-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    figure {
+      display: flex;
+      align-items: center;
+      gap: 1.3rem;
+    }
+    
+    img {
+      width: 4rem;
+      height: 4rem;
+    }
+  }
+}

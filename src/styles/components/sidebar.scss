@@ -3,12 +3,12 @@
 
 #sidebar {
   background-color: variables.$bg-color;
-  width: 16%;
+  width: 245px;
   position: fixed;
   top: 0;
   bottom: 0;
   left: 0;
-  padding: 2rem 1.5rem;
+  padding: 2rem 4rem 2rem 1.5rem;
   border-right: variables.$border-color;
 
   a {

@@ -1,12 +1,13 @@
 import Storys from "./Storys";
 
 import "../styles/components/maincontent.scss";
+import Aside from "./Aside";
 
 const MainContent = () => {
   return (
     <main id="main__content">
       <Storys />
-      <h1>Aside</h1>
+      <Aside />
     </main>
   );
 };

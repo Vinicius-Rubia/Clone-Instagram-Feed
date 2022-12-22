@@ -76,7 +76,7 @@ const posts_feed = [
       "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
   },
   {
-    id: 5,
+    id: 7,
     name: "erick",
     picture: person_7,
     post: post_7,
