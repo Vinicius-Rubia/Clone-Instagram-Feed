@@ -1,6 +1,18 @@
 @use '../variables.scss';
 @use '../mixins.scss';
 
+::-webkit-scrollbar {
+  width: auto;
+}
+
+::-webkit-scrollbar-track {
+  background: #424242;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #686868;
+}
+
 #storys {
   display: flex;
   background-color: variables.$bg-color;
@@ -23,7 +35,6 @@
       height: 4rem;
       border-radius: variables.$border-radius;
       border: 2px solid #FF1E4F;
-
       padding: .14rem;
     }
 
