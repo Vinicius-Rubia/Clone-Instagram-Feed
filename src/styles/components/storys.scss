@@ -1,10 +1,6 @@
 @use '../variables.scss';
 @use '../mixins.scss';
 
-::-webkit-scrollbar {
-  display: none;
-}
-
 #storys {
   display: flex;
   background-color: variables.$bg-color;
@@ -14,18 +10,23 @@
   gap: 1.1rem;
   width: 470px;
   overflow-x: auto;
-  
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+
   .picture {
     text-align: center;
-  
+
     img {
       width: 4rem;
       height: 4rem;
       border-radius: variables.$border-radius;
-      border: 2px solid #ff0000;
-      padding: 2px;
+      border: 2px solid #FF1E4F;
+
+      padding: .14rem;
     }
-  
+
     figcaption {
       font-size: .75rem;
       color: #262626;
