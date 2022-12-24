@@ -8,6 +8,7 @@ import iconMessenger from "../img/icon_messenger.svg";
 import iconHeart from "../img/icon_heart.svg";
 import iconPlus from "../img/icon_plus.svg";
 import iconMenu from "../img/icon_menu_hamburger.svg";
+import logoInstagramMobile from "../img/logo-instagram-mobile.svg"
 
 import "../styles/components/sidebar.scss";
 
@@ -23,24 +24,25 @@ const icons = [
 const Sidebar = () => {
   return (
     <aside id="sidebar">
-      <img src={logoInstagram} alt="Logo Instagram" />
+      <img className="logo-mobile" src={logoInstagramMobile} alt="Logo Instagram" />
+      <img className="logo-desktop" src={logoInstagram} alt="Logo Instagram" />
       <ul className="list__icons">
         {icons.map((icon) => (
           <li className="list__icons__item" key={icon.id}>
             <a href="#">
-              <img src={icon.icon} alt={icon.text} /> {icon.text}
+              <img src={icon.icon} alt={icon.text} /> <span className="text-menu">{icon.text}</span>
             </a>
           </li>
         ))}
         <li className="profile">
           <a href="#">
-            <img src={person_1} alt="Profile" /> Perfil
+            <img src={person_1} alt="Profile" /> <span className="text-menu">Perfil</span>
           </a>
         </li>
       </ul>
       <div className="btn-more">
         <a href="#">
-          <img src={iconMenu} alt="Icon Menu" /> Mais
+          <img src={iconMenu} alt="Icon Menu" /> <span className="text-menu">Mais</span>
         </a>
       </div>
     </aside>

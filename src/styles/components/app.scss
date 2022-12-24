@@ -2,3 +2,15 @@
   display: flex;
   margin-left: 245px;
 }
+
+@media (max-width: 1150px) {
+  #app {
+    margin-left: 1.5rem;
+  }
+}
+
+@media (max-width: 620px) {
+  #app {
+    margin-left: 0;
+  }
+}
