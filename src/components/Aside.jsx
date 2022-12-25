@@ -41,7 +41,7 @@ const Aside = () => {
       </div>
       <div className="suggestions">
         {suggestions.map((item) => (
-          <div className="suggestion">
+          <div className="suggestion" key={item.id}>
             <div className="content">
               <img src={item.picture} alt="Imagem de Perfil" />
               <div>
